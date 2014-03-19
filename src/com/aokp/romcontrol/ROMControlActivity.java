@@ -154,9 +154,6 @@ public class ROMControlActivity extends PreferenceDrawerActivity implements Butt
                 p.edit().putBoolean(KEY_USE_ENGLISH_LOCALE, !useEnglishLocale).apply();
                 recreate();
                 return true;
-            case android.R.id.home:
-                onBackPressed();
-                return true;
             default:
                 return super.onContextItemSelected(item);
         }
